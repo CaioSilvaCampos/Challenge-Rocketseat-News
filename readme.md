@@ -16,7 +16,7 @@
 <br>
 
 <p align='center'>
-  <img alt="Rocketseat News" src="./assets/cover.png" width = 100%>
+  <img alt="Rocketseat News" src="./assets/cover.png" width = 80%>
 </p>
 
 ## 🚀 Tecnologias
