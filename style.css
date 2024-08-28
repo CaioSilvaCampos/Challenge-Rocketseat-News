@@ -16,106 +16,113 @@
     box-sizing: border-box;
   }
 
-  body {
+  body{
+    display: flex;
+    flex-direction: row;
     background-color: var(--body-bg-color);
-    display: grid;
-    grid-template-columns: 720px 1175px;
-    min-width: 100vh;
-    overflow: hidden;
     color: var(--text-color);
-
-  }
-
-  aside img {
-    width: 68%;
-    height: 670px;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    margin: 10px;
+    font-family: 'League Spartan';
   }
 
-  .logo {
-      margin: 30px;
-      width: 389px;
-      height: 94px;
-      margin-bottom: 92px;
-  }
 
-  main {
+  .content{
     display: flex;
     flex-direction: column;
-    margin: 30px;
-    gap: 10px;
+    width: 60%;
+    margin: 25px;
+    padding: 10px;
+    gap: 20px;
+    height: 70%;
+  }
+  .content img{
+    width: 389px;
+    height: 94px;
+    
   }
 
-  h2 {
-    font-size: 24px;
-    font-family: 'Work Sans', sans-serif;
-    color: var(--title-color);
-    margin-left: 10px;
+  .img-wrapper{
+    width: 75%;
+    overflow: hidden;
+    height: auto;
   }
- 
-  p {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  small {
-    font-family: 'League Spartan', sans-serif;
-    margin-left: 10px;
-    font-size: 14px;
-    color: rgba(225, 225, 230, 0.5);
-    margin-bottom: 50px;
-  }
-
-  .form {
-    position: relative;
-    width: 798px;
-    height: 84px;
-    margin-left: 10px;
-  }
-
-  label {
-    display: block;
-    color: #A8A8A8;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 14px;
-  }
-
-  input {
-    width: 750px;
-    height: 48px;
-    background-color: #fff;
-    border-left: solid #04D361 10px;
+  .img-wrapper img{
+    width: 100%;
+    height: 100%;
     padding: 10px;
   }
+  .text-box{
+    margin-top: 38px;
+  }
+  h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 20px;
+  }
+  
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .form{
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .form label{
 
-  .form div {
-    background-color: var(--bg-button-color);
-    height: 48px;
-    width: 48px;
-    position: absolute;
-    display: inline;
-    text-align: center;
+      font-size: 14px;
+      color: var(--form-color);
+      margin-bottom: 20px;
   }
 
-  .form div img {
-    height: 20px;
-    width: 20px;
-    margin-top: 15px;
-    cursor: pointer;
- }
+  .form input {
+    position: absolute;
+    width: 105vh;
+    height: 48px;
+    z-index: 1;
+    left: 35px;
+    top: 320px;
+    border-left: 5px solid #04D361;
+    padding-left: 10px;
+  }
 
+  .form img {
+    width: 24px;
+    height: 24px;
 
-span {
+    border: 0;
+    outline: none;
+    color: var(--text-color);
+    cursor: pointer;  
+  }
+  .sent{
+    position: absolute;
+    top: 320px;
+    left: 108vh;
+    width: 48px;
+    height: 48px;
+    background-color: var(--bg-button-color);
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  .read-me{
     display: flex;
-    gap: 5px;
-    color: #8257E5;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 24px;   
-    margin-left: 10px;
-}
+    flex-direction: row;
+    margin-top: 80px;
+    gap: 1px;
+  }
+  .read-me a{
+      text-decoration: none;
+  }
 
-span :hover {
-    cursor: pointer;
-}
+  .read-me img{
+    width: 24px;
+    height: 30px;
+    padding-bottom: 15px;
+  }
